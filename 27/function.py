@@ -19,3 +19,13 @@ def my_abs(x):
 
 print my_abs(2)
 print my_abs(-2)
+
+def sum2N(n):
+	sum = 0
+	for x in range(n):
+		print(x)
+		sum = sum + x
+	return sum
+	
+
+print sum2N(101)
