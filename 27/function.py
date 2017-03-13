@@ -40,3 +40,14 @@ def llshpower(x, n=2):
 print '2^10=', llshpower(2,10)
 
 print '2^ =', llshpower(2)
+
+
+
+def lllshadd_end(L=[]):
+    L.append('END')
+    return L
+
+llshlist = range(10)
+print lllshadd_end(llshlist)
+
+
