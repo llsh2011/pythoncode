@@ -24,8 +24,28 @@ print sum
 a = range(5)
 print a[2]
 
-birth = raw_input('birth: ')
+birth = 0
+#birth = raw_input('birth: ')
 if birth < 2000:
     print '00前'
 else:
     print '00后'
+	
+	
+d = {'Michael': 95, 'Bob': 75, 'Tracy': 85}
+print d['Michael']
+
+d['Michael'] = 30
+print d
+print d['Michael']
+
+print 'Michael' in d
+
+print '\'Michael\' in d ', 'is' ,'Michel' in d
+
+d.pop('Michael')
+
+
+print d
+
+
