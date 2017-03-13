@@ -65,3 +65,6 @@ list_classmate.pop(2)
 print tuple_classmate
 
 
+print list(range(5))
+
+
