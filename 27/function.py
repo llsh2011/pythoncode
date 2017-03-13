@@ -23,9 +23,20 @@ print my_abs(-2)
 def sum2N(n):
 	sum = 0
 	for x in range(n):
-		print(x)
 		sum = sum + x
 	return sum
 	
 
 print sum2N(101)
+
+
+def llshpower(x, n=2):
+    s = 1
+    while n > 0:
+        n = n - 1
+        s = s * x
+    return s
+	
+print '2^10=', llshpower(2,10)
+
+print '2^ =', llshpower(2)
