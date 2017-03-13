@@ -55,3 +55,18 @@ print lllshadd_end(llshlist)
 
 llshlist_none = None
 print lllshadd_end(llshlist_none)
+
+
+
+def llshcalc(*numbers):
+    sum = 0
+    for n in numbers:
+        sum = sum + n * n
+    return sum
+	
+	
+print llshcalc(1,4,100) 
+
+
+nums = [1, 2, 3]
+print llshcalc(*nums) 
