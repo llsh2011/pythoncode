@@ -39,7 +39,7 @@ print u"中文"
 
 # list
 print '\nlist'
-list_classmate = ['lilei', "hanmeimei"]
+list_classmate = ['lilei', "hanmeimei",'zhangliping']
 print list_classmate,'len = ',len(list_classmate),',2nd= ',list_classmate[1]
 
 list_classmate.append(123)
@@ -66,5 +66,18 @@ print tuple_classmate
 
 
 print list(range(5))
+
+print list_classmate
+print list_classmate[:2]
+print list_classmate[-2:]
+
+list_num = range(100)
+print list_num
+print list_num[3::10]
+
+list_abc='abcdefghijklmn'
+print list_abc[::3]
+
+
 
 
