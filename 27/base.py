@@ -79,5 +79,21 @@ list_abc='abcdefghijklmn'
 print list_abc[::3]
 
 
+for ch in 'asdfghjkl;'[::2]:
+	print ch
+
+from collections import Iterable
+print isinstance('abc', Iterable)
+print isinstance(12345, Iterable)
+
+
+
+for i, value in enumerate(['A', 'B', 'C']):
+	print i, value
+
+
+
+for x, y in [(1, 1), (2, 4), (3, 9)]:
+	print x, y
 
 
