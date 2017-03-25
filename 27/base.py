@@ -95,5 +95,50 @@ for i, value in enumerate(['A', 'B', 'C']):
 
 for x, y in [(1, 1), (2, 4), (3, 9)]:
 	print x, y
+	
+	
+#第一种方法很简单，只要把一个列表生成式的[]改成()，就创建了一个generator
+L = [x * x for x in range(10)]
+print L
+g =(x * x for x in range(10))
+print g
+print next(g)
+print next(g)
+print next(g)
+
+
+
+
+for n in g:
+	print n,'in g'
+	
+	
+#函数
+def fib(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        print(b)
+        a, b = b, a + b
+        n = n + 1
+    return 'done'
+	
+fib(6)
+#函数generator
+def fib_g(max):
+    n, a, b = 0, 0, 1
+    while n < max:
+        yield b
+        a, b = b, a + b
+        n = n + 1
+
+	
+g_fib = fib_g(6)
+
+for n in g_fib:
+	print n,'in g_fib'
+
+
+
+
 
 
