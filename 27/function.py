@@ -70,3 +70,28 @@ print llshcalc(1,4,100)
 
 nums = [1, 2, 3]
 print llshcalc(*nums) 
+
+
+
+print 'function  map'
+def f(x):
+	return x * x
+
+print  map(f, range(9))
+print  map(str, range(9))
+
+
+
+def fn(x, y):
+	return 10*x + y
+
+	
+def str2int(s):
+    def fn(x, y):
+        return x * 10 + y
+    def char2num(s):
+        return {'0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9}[s]
+    return reduce(fn, map(char2num, s))
+	
+	
+print str2int('3242315')
